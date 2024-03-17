@@ -1,0 +1,9 @@
+
+#structurize.config.update.comment
+[update]
+	#structurize.config.mode.comment
+	#Allowed Values: DISABLED, DOMUM_ORNAMENTUM
+	mode = "DISABLED"
+	start = [-10, -10]
+	end = [10, 10]
+

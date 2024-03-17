@@ -1,0 +1,165 @@
+
+#Todas las configuraciones relacionadas con el sistema de investigaciones
+[research]
+	#Permite completar de forma automática y (casi) instantánea investigaciones a los jugadores en creativo. En "false" los jugadores en creativo podrán comenzar investigaciones pero tendrán un progreso normal. [Predeterminado: true]
+	researchcreativecompletion = true
+	#Aumenta significantemente la cantidad de información relacionada con los datapacks de investicaciones, se mostrarán durante la carga del mundo. [Predeterminado: false]
+	researchdebuglog = false
+	#Una lista de los objetos a cobrar a los jugadores cuando intenten deshacer una investigación completada. 
+	researchresetcost = ["minecolonies:ancienttome:1"]
+
+#Todas las configuraciones relacionadas con comandos de Minecolonies
+[commands]
+	#¿Debería permitirse al jugador usar el comando '/mc rtp'? [Predeterminado: false]
+	canplayerusertpcommand = false
+	#¿Debería permitirse usar el comando /mc colony teleport a el jugador? [Predeterminado: false]
+	canplayerusecolonytpcommand = false
+	#¿Pueden los jugadores teletransportarse a colonias aliadas? [Predeterminado: true]
+	canplayeruseallytownhallteleport = true
+	#¿Debería permitirse a los jugadores utilizar el comando /mc home? Nota: Solo los propietarios de la colonia pueden usar este comando. [Predeterminado: false]
+	canplayerusehometpcommand = false
+	#¿Debería permitirse usar el comando '/mc colony info' al jugador? [Predeterminado: true]
+	canplayeruseshowcolonyinfocommand = true
+	#¿Debería permitirse usar el comando '/mc citizens kill' a jugadores? [Predeterminado: false]
+	canplayerusekillcitizenscommand = false
+	#¿Debería permitirse usar el comando '/mc colony addOfficer' a jugadores? [Predeterminado: true]
+	canplayeruseaddofficercommand = true
+	#¿Debería permitirse usar el comando '/mc colony delete' a jugadores? [Predeterminado: true]
+	canplayerusedeletecolonycommand = true
+	#Cantidad de intentos para encontrar un lugar de teletransporte seguro (con /mc rtp). [Predeterminado: 4, min: 1, max: 10]
+	#Range: 1 ~ 10
+	numberofattemptsforsafetp = 4
+
+#Toda la configuración relacionada con el reclamo de colonias
+[claims]
+	#Rango máximo de territorio de una colonia. Este es el radio, medido en chunks. [Predeterminado: 20, min: 1, max: 50]
+	#Range: 1 ~ 50
+	maxColonySize = 20
+	#La mínima distancia (en chunks) entre colonias. [Predeterminado: 8, min: 1, max: 200]
+	#Range: 1 ~ 200
+	minColonyDistance = 8
+	#Tamaño máximo de territorio inicial de una colonia. Este es el radio, medido en chunks. [Predeterminado: 4, min: 1, max: 15]
+	#Range: 1 ~ 15
+	initialColonySize = 4
+	#¿Debería la distancia min/máx afectar también al emplazamiento de la colonia? [Predeterminado: false]
+	restrictcolonyplacement = false
+	#Máxima distancia (en bloques) desde el punto de aparición del mundo para una colonia. [Predeterminado: 8000, min: 1000, max: 100000]
+	#Range: 1000 ~ 100000
+	maxdistancefromworldspawn = 8000
+	#Mínima distancia (en bloques) desde el punto de aparición del mundo para una colonia. [Predeterminado: 512, min: 1, max: 1000]
+	#Range: 1 ~ 1000
+	mindistancefromworldspawn = 512
+	#¿Deberían los oficiales recibir logros de una colonia? [Predeterminado: true]
+	officersreceiveadvancements = true
+
+#Todas las configuraciones respecto a elementos de combate en Minecolonies
+[combat]
+	#Si deberían o no aparecer asaltantes. [Predeterminado: true]
+	dobarbariansspawn = true
+	#Ajuste de dificultad para los asaltantes. [Predeterminado: 5, min: 0, max: 10]
+	#Range: 0 ~ 10
+	barbarianhordedifficulty = 5
+	#El máximo número de una horda de asaltantes. [Predeterminado: 80, min: 6, max: 400]
+	#Range: 6 ~ 400
+	maxBarbarianSize = 80
+	#Si los asaltantes pueden atravesar obstáculos o no [Predeterminado: true]
+	dobarbariansbreakthroughwalls = true
+	#Número de noches que deben pasar entre asaltos. [Predeterminado: 14, min: 1, max: 50]
+	#Range: 1 ~ 50
+	averagenumberofnightsbetweenraids = 14
+	#La cantidad mínima de noches que deben pasar entre asaltos. [Predeterminado: 10, min: 1, max: 30]
+	#Range: 1 ~ 30
+	minimumnumberofnightsbetweenraids = 10
+	#¿Deben atacar las entidades a los ciudadanos? [Predeterminado: true]
+	mobattackcitizens = true
+	#Si deberían o no los asaltantes romper puertas. [Predeterminado: true]
+	shouldraiderbreakdoors = true
+	#¿Deberían los ciudadanos llamar a los guardias para ayudarles cuando les atacan? [Predeterminado: true]
+	citizencallforhelp = true
+	#Multiplicador de daño para guardias arqueros. [Predeterminado: 1.000000, min: 0.100000, max: 5.000000]
+	#Range: 0.1 ~ 5.0
+	rangerdamagemult = 1.0
+	#Multiplicador de daño para guardias caballeros. [Predeterminado: 1.000000, min: 0.100000, max: 5.000000]
+	#Range: 0.1 ~ 5.0
+	knightdamagemult = 1.0
+	#Multiplicador de salud de todos los guardias. [Predeterminado: 1.000000, min: 0.100000, max: 5.000000]
+	#Range: 0.1 ~ 5.0
+	guardhealthmult = 1.0
+	#Activa el modo jugador contra jugador en Minecolonies, (las colonias pueden ser destruídas y pueden sufrir daños en ciertas condiciones). [Predeterminado: false]
+	pvp_mode = false
+	#Días restantes para retirada del barco pirata. [Predeterminado: 3, min: 1, max: 10]
+	#Range: 1 ~ 10
+	daysuntilpirateshipsdespawn = 3
+	#Máximo nivel Y (altura) para aparición de asaltantes. [Predeterminado: 200, min: 1, max: 500]
+	#Range: 1 ~ 500
+	maxyforbarbarians = 200
+
+#Todas las configuraciones de permisos
+[permissions]
+	#¿Debería habilitarse la protección de colonias? [Predeterminado: true]
+	enablecolonyprotection = true
+	#Establece la máxima cantidad de copias de seguridad almacenadas [Predeterminado: 50, min: 3, max: 5000]
+	#Range: 3 ~ 5000
+	maxkeptbackups = 50
+	#Independientemente de la protección de la colonia. ¿Deberían eliminarse las explosiones dentro de las colonias? DAMAGE_NOTHING evita las explosiones por completo. DAMAGE_PLAYERS, permite que las explosiones dañen a los jugadores y a las criaturas hostiles, pero no a los bloques ni a las criaturas neutrales o amigas. DAMAGE_ENTITIES permite dañar a todas las entidades. DAMAGE_EVERYTHING permite que las explosiones dañen entidades y bloques. 
+	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
+	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
+	#Jugadores que tienen permisos especiales, especialmente para cambiar el nombre de los ciudadanos (ver "Cambios de nombre" más arriba). 
+	specialpermgroup = ["_Raycoms_"]
+	#Bloques con los que los jugadores pueden interactuar en cualquier colonia(ej: máquinas expendedoras) 
+	freetointeractblocks = ["dirt", "0 0 0"]
+	#Segundos entre cada mensaje de permiso (para reducir spam). [Predeterminado: 30, min: 1, max: 1000]
+	#Range: 1 ~ 1000
+	secondsBetweenPermissionMessages = 30
+
+#Todas las configuraciones respecto a la compatibilidad de mods
+[compatibility]
+	#Objetos consumidos por los ciudadanos en la biblioteca. 
+	configliststudyitems = ["minecraft:paper;400;100", "minecraft:book;600;10"]
+	#Objetos pedidos por los visitantes de las tabernas. 
+	configlistrecruitmentitems = ["minecraft:hay_block;3", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;11", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
+	#Lista de minerales que los mineros mágica y esporádicamente pueden encontrar (ver "Probabilidad de mineral"). Incluye el bloque y su probabilidad, separados por signos de exclamación. 
+	luckyores = ["minecraft:coal_ore!64", "minecraft:copper_ore!48", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
+	#Tamaño talable de tronco para árboles dinámicos: 1-8. [Predeterminado: 5, min: 1, max: 8]
+	#Range: 1 ~ 8
+	dynamictreeharvestsize = 5
+	#Compensación para la máxima durabilidad de la caña sin encantamiento que puede usar una cabaña de pesca T2, en comparación con las herramientas de hierro (250). La "Thermal Foundation Iron" requiere +6. Las cabañas T3 pueden usar cañas no encantadas de cualquier nivel de durabilidad, siempre que puedan sufrir daños. Cualquier valor por debajo de -250 solo permitirá cañas de minecraft normal, excepto las permitidas por T1. [Predeterminado: 6, min: -249, max: 250000]
+	#Range: -249 ~ 250000
+	fishingroddurabilityadjustt2 = 6
+	#Compensación para la máxima durabilidad de la caña no encantada que puede usar una cabaña de pesca T1, en comparación con otras herramientas de madera (59). Las cañas de minecraft normal siempre funcionan, pero las equivalentes necesitarían +6. El valor predeterminado permite hasta "Thermal Foundation Silver". Cualquier valor por debajo de -59 solo permitirá cañas de minecraft normal. [Predeterminado: 22, min: -58, max: 250000]
+	#Range: -58 ~ 250000
+	fishingroddurabilityadjustt1 = 22
+	#Todas las enfermedades que los aldeanos pueden tener. El nombre, como de común es y todos los ingredientes para curarlo. 
+	diseases = ["Influenza,100,minecraft:carrot,minecraft:potato", "Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy", "Smallpox,1,minecraft:honey_bottle,minecraft:golden_apple"]
+	#Al cargar recetas, genera archivos CSV de auditoría para ayudar a depurar datapacks o mods adicionales. [Predeterminado: false]
+	auditcraftingtags = false
+	#Activar depuración de inventarios. [Predeterminado: false]
+	debuginventories = false
+
+#Todas las configuraciones relacionadas con cálculos de ruta
+[pathfinding]
+	#Mensajes de depuración del comentado de rutas. [Predeterminado: 0, min: 0, max: 10]
+	#Range: 0 ~ 10
+	pathfindingdebugverbosity = 0
+	#Mínimo número de raíles consecutivos para que los ciudadanos los usen. [Predeterminado: 8, min: 5, max: 100]
+	#Range: 5 ~ 100
+	minimumrailstopath = 8
+	#Cantidad de hilos de procesador adicionales a usar en cálculos de ruta. [Predeterminado: 2, min: 1, max: 10]
+	#Range: 1 ~ 10
+	pathfindingmaxthreadcount = 2
+
+#Todas las configuraciones relacionadas con peticiones del sistema
+[requestSystem]
+	#¿Debería el sistema de peticiones mostrar información de depuración? Útil si no está funcionando bien. [Predeterminado: false]
+	enabledebuglogging = false
+	#La cantidad máxima de reintentos que realizará el sistema de peticiones para solicitudes "reintentables". Un mayor valor aumenta la carga del servidor. [Predeterminado: 3, min: 1, max: 10]
+	#Range: 1 ~ 10
+	maximalretries = 3
+	#La cantidad de tics entre reintentos del sistema de solicitud para solicitudes "reintentables". Un menor valor aumenta la carga del servidor. [Predeterminado: 1200, min: 30, max: 10000]
+	#Range: 30 ~ 10000
+	delaybetweenretries = 1200
+	#¿Debería el sistema de solicitudes resolver creativamente (si es posible) cuando se requiere que el jugador resuelva una solicitud? Esta es una herramienta de depuración y puede llevar mucho tiempo resolver una solicitud. [Predeterminado: false]
+	creativeresolve = false
+	#¿Debería permitirse usar el comando '/mc colony requestsystem-reset' a jugadores? [Predeterminado: false]
+	canplayeruseresetcommand = false
+
